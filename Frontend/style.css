@@ -1,10 +1,231 @@
-body{
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    background-color: hsla(200, 100%, 50%, 0.3); 
+body {
+    background-color: hsla(200, 100%, 50%, 0.3);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-.header{
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #2b6cb0;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .nav-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .nav-links li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+    color: #ffcb00;
+}
+
+/* Hero Section */
+#hero {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #2b6cb0, #1e3a8a);
+    color: white;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#hero a {
+    background-color: #ffcb00;
+    color: black;
+    padding: 14px 32px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#hero a:hover {
+    background-color: #fbbf24;
+    transform: scale(1.05);
+}
+
+/* Features Section */
+#features {
+    padding: 60px 0;
+    background-color: #f8fafc;
+}
+
+#features h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2b6cb0;
+}
+
+#features .grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.feature-item {
+    background: #ffffff;
+    padding: 30px;
+    width: 30%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+
+/* Tech Stack Section */
+#techstack {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+#techstack h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2b6cb0;
+}
+
+#techstack ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+#techstack ul li {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #2b6cb0;
+}
+
+/* Contribute Section */
+#contribute {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #fbbf24, #ffcb00);
+    text-align: center;
+}
+
+#contribute a {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 28px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contribute a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #2b6cb0;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #ffcb00;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    #features .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+    
+    header .nav-links {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    header .nav-links li {
+        margin-left: 15px;
+    }
 }
