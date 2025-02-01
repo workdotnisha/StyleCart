@@ -1,9 +1,9 @@
-# 🌍 ChatSphere - A Place to Connect & Collaborate
+# 🌍 Samnwadh - A Place to Connect & Collaborate
 
-Welcome to **ChatSphere** – an open-source platform designed to bring people together, share knowledge, and make new friends, just like WhatsApp Web but with additional features! 🚀
+Welcome to **Samnwadh** – an open-source platform designed to bring people together, share knowledge, and make new friends, just like WhatsApp Web but with additional features! 🚀
 
 ## ✨ About the Project
-ChatSphere is a web-based chat application that allows users to **connect, share, and collaborate** in real time. Whether you're looking to spread knowledge, discuss trending topics, or just make new friends, this platform is for you!
+Samnwadh is a web-based chat application that allows users to **connect, share, and collaborate** in real time. Whether you're looking to spread knowledge, discuss trending topics, or just make new friends, this platform is for you!
 
 ## 🔥 Features
 - **Real-time Messaging** 💬
