@@ -1,5 +1,6 @@
 body{
-    background-color: yellow;
+
+    background-color: hsla(200, 100%, 50%, 0.3); 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
