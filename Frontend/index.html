@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatSphere - Connect & Collaborate</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="bg-gray-100 text-gray-900">
     <header class="bg-blue-600 text-white p-6">
@@ -21,10 +22,15 @@
         </div>
     </header>
 
+    <!-- scroll button -->
+    <button id="scrollBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <section id="hero" class="bg-blue-600 text-white text-center py-24">
-        <h2 class="text-3xl font-bold mb-4">Welcome to ChatSphere!</h2>
+        <h2 class="text-3xl font-bold mb-4">Welcome to Sawnwadh!</h2>
         <p class="text-lg mb-6">An open-source platform to connect, share, and collaborate in real-time.</p>
-        <a href="#contribute" class="bg-yellow-500 text-black py-2 px-6 rounded-lg hover:bg-yellow-400 hover:text-[#2b6cb0] transition-colors duration-300">
+        <a href="#contribute" class="bg-yellow-500 text-black py-2 px-6 rounded-lg hover:bg-yellow-400 hover:text-white transition-colors duration-300">
             Get Started
         </a>        
     </section>
@@ -49,15 +55,17 @@
         </div>
     </section>
 
+    <!-- footer section -->
     <footer class="bg-blue-600 text-white py-8 text-center">
-        <p>&copy; 2025 ChatSphere. All rights reserved.</p>
+        <p>&copy; 2025 Samnwadh. All rights reserved.</p>
         <div class="social-links mt-4">
-            <a href="#" class="mx-4">GitHub</a>
-            <a href="#" class="mx-4">Discord</a>
-            <a href="#" class="mx-4">Twitter</a>
+            <a href="#" class="mx-4"><i class="fab fa-github"></i></a>
+            <a href="#" class="mx-4"><i class="fa-brands fa-discord"></i></a>
+            <a href="#" class="mx-4"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="mx-4"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
