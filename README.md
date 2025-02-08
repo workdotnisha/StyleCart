@@ -20,10 +20,10 @@
 #### **Clone the repository:**
 
 ```html
-<pre>
+
  git clone https://github.com/souvik-maity/StyleCart.git
  cd StyleCart
-</pre>
+
 ```
 
 #### **Run the frontend (current setup):**
@@ -46,33 +46,33 @@ We welcome contributions to improve StyleCart! To contribute:
 #### **1. Fork the repository:**
 
 ```html
-<pre>
+
 git fork https://github.com/souvik-maity/StyleCart.git
-</pre>
+
 ```
 
 #### **2. Create a new branch:**
 
 ```html
-<pre>
+
 git checkout -b feature-branch
-</pre>
+
 ```
 
 #### **3. Make changes and commit:**
 
 ```html
-<pre>
+
 git commit -m "Add new feature"
-</pre>
+
 ```
 
 #### **4. Push the changes:**
 
 ```html
-<pre>
+
 git push origin feature-branch
-</pre>
+
 ```
 
 #### **5. Open a Pull Request (PR) on GitHub.**
