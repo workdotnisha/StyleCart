@@ -172,7 +172,7 @@ header .nav-links a:hover {
     transform: scale(1.05);
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
     background-color: #2b6cb0;
     color: white;
@@ -186,12 +186,13 @@ footer p {
     margin-bottom: 20px;
 }
 
+/* Social Links */
 footer .social-links a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
     margin: 0 15px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
     border: 1px solid white;
     padding: 10px;
     border-radius: 20px;
@@ -201,6 +202,29 @@ footer .social-links a:hover {
     color: #ffcb00;
     background-color: purple;
 }
+
+/* About Us & Contact Us Links */
+footer .footer-links {
+    margin-top: 20px; /* Adds space between social links and text links */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 5px 0; /* Adds spacing between links */
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+footer .footer-links a:hover {
+    color: #ffcb00;
+    text-decoration: underline;
+}
+
 
 /* Media Queries for Mobile Responsiveness */
 @media screen and (max-width: 768px) {
@@ -255,4 +279,34 @@ footer .social-links a:hover {
     background-color: rgb(34, 139, 34);
     transform: scale(1.1);
     box-shadow: 0px 0px 12px rgba(0, 123, 255, 0.8);
+}
+
+/* Team Section */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.team-member h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.team-member p {
+    color: gray;
+    font-size: 1rem;
 }
