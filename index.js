@@ -25,6 +25,10 @@ class Mode {
       from: "after:bg-white",
       to: "after:bg-[#23272f]",
     },
+    {
+      from: "border-gray-300",
+      to: "border-gray-700",
+    },
   ];
 
   static change = function () {
