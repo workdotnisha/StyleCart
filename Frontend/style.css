@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: hsla(200, 100%, 50%, 0.3);
+    background-color: hsla(51, 67%, 73%, 0.9);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -23,6 +23,8 @@ header {
     background-color: #2b6cb0;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(0, 184, 245);
+    border-radius: 5px;
 }
 
 header .nav-links {
@@ -146,32 +148,7 @@ header .nav-links a:hover {
     color: #4a4a4a;
 }
 
-/* Tech Stack Section */
-#techstack {
-    padding: 60px 0;
-    background-color: #ffffff;
-}
 
-#techstack h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #2b6cb0;
-}
-
-#techstack ul {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    list-style-type: none;
-}
-
-#techstack ul li {
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    color: #2b6cb0;
-}
 
 /* Contribute Section */
 #contribute {
@@ -245,7 +222,7 @@ footer .social-links a:hover {
         font-size: 1rem;
     }
     #hero a:hover {
-        background-color: aqua;
+        background-color: rgb(233, 233, 36);
     }
     
     header .nav-links {
