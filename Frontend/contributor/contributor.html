@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samnwadh: Contributors </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="manifest" href="/site.webmanifest">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contributor.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <button class="back-button" onclick="window.location.href ='../index.html'">
+            <i class="fa-solid fa-arrow-left fa-xl"></i>
+        </button>
+            <!-- Floating Image Button -->
+
+        <!-- hamburger menu -->
+    <button class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    </nav>    
+ <!-- Contributors Section -->
+ <div class="container">
+    <h1 class="title">Contributors of Samnwadh</h1>
+    <div id="contributors" class="contributors-grid">
+    </div>
+  </div>
+
+  <script src="contributor.js"></script>
+
+
+    <script>
+        // hamburger menu js
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+
+    <!-- Footer -->
+
+    <!-- Top scroll button -->
+    <button id="scrollBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up fa-lg"></i>
+    </button>
+
+    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <script>
+        // Get the button element
+        const scrollBtn = document.getElementById('scrollBtn');
+
+        // Show the button when the user scrolls down 100px from the top
+        window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+        };
+
+        // Scroll to the top of the page when the button is clicked
+        scrollBtn.onclick = function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+        };
+    </script>
+
+   <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+   <script>
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {
+            pageLanguage: 'en',
+            includedLanguages: 'en,hi,es,fr,de,it,ja,zh-CN',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+            },
+            'google_translate_element'
+        );
+        }
+
+        function toggleTranslate() {
+        const translateElement = document.getElementById('google_translate_element');
+        if (translateElement.style.display === 'none' || translateElement.style.display === '') {
+            translateElement.style.display = 'block';
+        } else {
+            translateElement.style.display = 'none';
+        }
+        }
+   </script>
+
+   <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+   <script>
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {
+            pageLanguage: 'en',
+            includedLanguages: 'en,hi,es,fr,de,it,ja,zh-CN',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+            },
+            'google_translate_element'
+        );
+        }
+
+        function toggleTranslate() {
+        const translateElement = document.getElementById('google_translate_element');
+        if (translateElement.style.display === 'none' || translateElement.style.display === '') {
+            translateElement.style.display = 'block';
+        } else {
+            translateElement.style.display = 'none';
+        }
+        }
+   </script>
+
+</body>
+</html>
