@@ -30,7 +30,7 @@ body {
 
 /* Back Button */
 .back-button {
-    background: #28a745;
+    background: #2867f0;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -41,7 +41,7 @@ body {
 }
 
 .back-button:hover {
-    background: #218838;
+    background: #0190f6;
     transform: scale(1.05);
 }
 
