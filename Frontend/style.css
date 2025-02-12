@@ -23,6 +23,8 @@ header {
     background-color: #2b6cb0;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(0, 184, 245);
+    border-radius: 5px;
 }
 
 header .nav-links {
