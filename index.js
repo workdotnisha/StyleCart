@@ -69,3 +69,19 @@ const modeChanger_1 = document.getElementById("darkModeToggle"),
 
 modeChanger_1.addEventListener("click", Mode.change);
 modeChanger_2.addEventListener("click", Mode.change);
+
+// Detect scroll to show/hide button
+window.onscroll = function () {
+  let btn = document.getElementById("scrollToTopBtn");
+
+  if (document.documentElement.scrollTop > 100) {
+    btn.classList.add("show", "float"); // Show button & Floating animation
+  } else {
+    btn.classList.remove("show", "float"); // Hide when at the top
+  }
+};
+
+// Smooth scroll to top function
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
