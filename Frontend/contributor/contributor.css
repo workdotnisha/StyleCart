@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(43, 43, 40);
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     padding: 10px 20px;
     position: sticky;
     top: 0;
