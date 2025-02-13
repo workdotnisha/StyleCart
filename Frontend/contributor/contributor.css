@@ -83,31 +83,49 @@ body {
     }
     
     /* Contributors Grid */
-  .contributors-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin: 40px auto;
-    padding: 0 20px;
-    max-width: 1200px;
+    .contributors-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards per row */
+      gap: 20px;
+      margin: 40px auto;
+      padding: 0 20px;
+      max-width: 1000px; /* Adjusted to fit exactly 3 cards */
+      justify-content: center;
   }
-
+  
   /* Contributor Card */
   .contributor-card {
-    background: #f6c903;
-    padding: 20px;
-    height: 250px;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+      background: #f6c903;
+      padding: 20px;
+      height: 250px;
+      width: 300px; /* Ensure each card has a fixed width */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  
 
   .contributor-card:hover {
     transform: scale(1.01);
-    box-shadow: 0 12px 25px rgba(244, 1, 54, 0.995);
+    box-shadow: 0 12px 25px rgba(238, 195, 1, 0.995);
+  }
+
+  /* Fix container responsiveness */
+  @media (max-width: 1024px) {
+    .contributors-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contributors-grid {
+        grid-template-columns: repeat(1, 1fr); 
+    }
   }
 
   .contributor-card img {
