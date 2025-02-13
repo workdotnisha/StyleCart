@@ -183,58 +183,85 @@ header .nav-links a:hover {
 }
 
 /* Footer Styling */
+/* Footer Styling */
 footer {
     background-color: #2b6cb0;
     color: white;
     padding: 40px 0;
-    text-align: center;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
-footer p {
+/* Footer Links (Right Side) */
+.footer-container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end; /* Moves links to the right */
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+    font-weight: bold;
 }
 
-/* Social Links */
-footer .social-links a {
+.footer-links a:hover {
+    color: #ffcb00;
+    text-decoration: underline;
+}
+
+/* Social Links & Copyright (Centered at Bottom) */
+.bottom-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+
+.bottom-footer p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
-    margin: 0 15px;
     transition: color 0.3s ease, background-color 0.3s ease;
     border: 1px solid white;
     padding: 10px;
     border-radius: 20px;
 }
 
-footer .social-links a:hover {
+.social-links a:hover {
     color: #ffcb00;
     background-color: purple;
 }
-
-/* About Us & Contact Us Links */
-footer .footer-links {
-    margin-top: 20px; /* Adds space between social links and text links */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer .footer-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    margin: 5px 0; /* Adds spacing between links */
-    transition: color 0.3s ease;
-    font-weight: bold;
-}
-
-footer .footer-links a:hover {
-    color: #ffcb00;
-    text-decoration: underline;
-}
-
 
 /* Media Queries for Mobile Responsiveness */
 @media screen and (max-width: 768px) {
