@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - Samnwadh</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <button class="back-button" onclick="window.location.href = 'index.html'">
-            <i class="fa-solid fa-arrow-left fa-xl"></i>
-        </button>
+      <button class="back-button" onclick="window.location.href = 'index.html'">
+        <i class="fa-solid fa-arrow-left fa-xl"></i>
+      </button>
     </nav>
 
     <div class="contact-container">
-        <h1>Contact <span class="highlight">Us</span></h1>
-        <form class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="tel" name="phone" placeholder="Your Phone Number" required>
-            <input type="text" name="address" placeholder="Your Address" required>
-            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+      <h1>Contact <span class="highlight">Us</span></h1>
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="username" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Your Phone Number"
+          required
+        />
+        <input type="text" name="address" placeholder="Your Address" required />
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
-
-</body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="module" src="contact.js"></script>
+  </body>
 </html>
