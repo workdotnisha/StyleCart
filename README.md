@@ -28,7 +28,7 @@ Samnwadh is a web-based chat application that allows users to **connect, share, 
              <td><img alt="Forks" src="https://img.shields.io/github/forks/ak-0283/Samnwadh?style=flat&logo=github"/></td>
             <td><img alt="Issues" src="https://img.shields.io/github/issues/ak-0283/Samnwadh?style=flat&logo=github"/></td>
             <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/ak-0283/Samnwadh?style=flat&logo=github"/></td>
-           <td><img alt="Closed Pull Requests" src="https://img.shields.io/github/issues-pr-closed/ak-0283/Samnwadh?style=flat&color=critical&logo=github"/></td>
+             <td><img alt="Closed Pull Requests" src="https://img.shields.io/github/issues-pr-closed/ak-0283/Samnwadh?style=flat&color=critical&logo=github"/></td>
              <td><b><img src="https://img.shields.io/github/languages/code-size/ak-0283/Samnwadh?logo=github"></b></td>
             <td><b><img src="https://img.shields.io/github/commit-activity/m/ak-0283/Samnwadh?color=bluevoilet&logo=github)"></b></td>
             <td><b><img src="https://img.shields.io/github/repo-size/ak-0283/Samnwadh?logo=github"></b></td>
