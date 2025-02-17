@@ -17,11 +17,33 @@
 
     <div class="signup-wrapper">
         <h2 class="signup-title">Sign Up</h2>
-        <input type="email" class="signup-input" id="signup-username" placeholder="Enter Email">
-        <input type="password" class="signup-input" id="signup-password" placeholder="Enter Password">
+        <input type="file" name="profilepic" class="signup-profilepic" id="profilepic" accept="image/*" required>
+        <label for="profilepic" class="lab-signup-profile"><img src="download.png" alt=""></label>
+        <input type="text"  class="signup-input" id="signup-name" placeholder="Enter Name">
+        <input type="date" class="signup-input" id="signup-dob">
+        <div class="user-gender">
+            <div class="female">
+        <input type="radio" name="gender" class="signupinput-gender" id="signup-gender" value="Female">
+        <label for="signup-gender">Female</label></div>
+        <div class="male">
+        <input type="radio" name="gender" class="signupinput-gender" id="signup-gender" value="Male">
+        <label for="signup-gender">Male</label></div>
+        <div class="others">
+        <input type="radio" name="gender" class="signupinput-gender" id="signup-gender" value="Other">
+        <label for="signup-gender">Others</label></div>
+    </div>
+        <input type="email" class="signup-input" id="signup-username" placeholder="Enter Email" required>
+        <input type="tel" class="signup-input" id="signup-phone" placeholder="Enter Phone" required>
+        <input type="password" class="signup-input" id="signup-password" placeholder="Enter Password" required>
+        <input type="password" class="signup-input" id="signup-confirmpassword" placeholder="Confirm Password" required>
+       
+        <div class="bttn">
+        <button type="reset" class="reset-button">Reset</button>
         <button class="signup-button" onclick="signup()">Sign Up</button>
+    </div>
         <p class="signup-text">Already have an account? <a href="login.html" class="signup-link">Login</a></p>
         <p id="signup-message" class="signup-message"></p>
+    
     </div>
     <script src="script.js"></script>
 </body>

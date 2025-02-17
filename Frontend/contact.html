@@ -14,6 +14,13 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
+    <script type="module">
+      import { config } from "./config.js";
+
+      // Set the hidden input value
+      document.getElementById("accessKeyInput").value = config.ACCESS_KEY;
+      const accessKey = document.getElementById("accessKeyInput").value;
+    </script>
   </head>
   <body>
     <!-- Navbar -->
@@ -25,15 +32,11 @@
 
     <div class="contact-container">
       <h1>Contact <span class="highlight">Us</span></h1>
-      <form id="contactForm" class="contact-form">
-        <input type="text" name="username" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Your Phone Number"
-          required
-        />
+      <form class="contact-form" method="POST" id="form">
+        <input id="accessKeyInput" type="hidden" name="access_key" value="" />
+
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
         <input type="text" name="address" placeholder="Your Address" required />
         <textarea
           name="message"
@@ -41,9 +44,23 @@
           placeholder="Your Message"
           required
         ></textarea>
-        <button type="submit">Send Message</button>
+        <!-- Honeypot Spam Protection -->
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+        <button type="submit">Submit Form</button>
+
+        <div id="result"></div>
       </form>
     </div>
-    <script type="module" src="contact.js"></script>
+    <script src="web3.js"></script>
+    <!-- <script type="module" src="contact.js"></script> -->
   </body>
 </html>

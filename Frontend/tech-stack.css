@@ -11,6 +11,7 @@ header {
   color: white;
   padding: 20px 0;
   font-size: 24px;
+  border-radius: 0%;
 }
 
 .tech-container {
@@ -52,4 +53,84 @@ header {
   margin-top: 10px;
   font-weight: bold;
   color: #2b6cb0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Back Button */
+.back-button {
+  background: #2867f0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #0190f6;
+  transform: scale(1.05);
+}
+
+/* searchbar design */
+.search-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 12px;
+  margin: 20px 0;
+  font-size: 18px;
+  border: 2px solid #3498db;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  padding-right: 40px; /* Space for clear button */
+}
+
+.search-bar:focus {
+  border-color: #2ecc71;
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+}
+
+.clear-btn {
+  position: absolute;
+  right: 27%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #7c7877;
+  padding: 5px 10px;
+  border-radius: 50%;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+  color: #c0392b;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  margin-top: 15px;
 }
