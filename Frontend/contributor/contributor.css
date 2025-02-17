@@ -58,6 +58,7 @@ body {
     height: 4px;
     margin: 4px 0;
     }
+   
 }
 
     
@@ -66,6 +67,7 @@ body {
         margin: 0 auto;
         padding: 20px;
         max-width: 1200px;
+        
     }
 
     .title {
@@ -76,9 +78,6 @@ body {
         text-transform: uppercase; /* Makes the text uppercase */
         margin-bottom: 20px;
         letter-spacing: 1.5px; /* Adds spacing between letters */
-        background: linear-gradient(90deg, #303131, #262728); /* Gradient background */
-        -webkit-background-clip: text; /* Clips the gradient to the text */
-        -webkit-text-fill-color: transparent; /* Makes the background of the text transparent */
         text-align: center; /* Centers the text */
     }
     
@@ -124,8 +123,12 @@ body {
 
   @media (max-width: 768px) {
     .contributors-grid {
-        grid-template-columns: repeat(1, 1fr); 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+   
   }
 
   .contributor-card img {
