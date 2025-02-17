@@ -13,62 +13,22 @@ body {
     color: #fff; 
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-    .hamburger {
-        display: none;
-        flex-direction: column;
-        cursor: pointer;
-        justify-content: space-between;
-        background: transparent;
-        border: none;
-        padding: 0;
-    }
-    
-    .hamburger span {
-        height: 3px;
-        width: 100%;
-        background: #fff;
-        display: block;
-        border-radius: 10px;
-        margin: 8px 0;
-        width: 45px;
-        height: 6px;
-    }
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-    .hamburger span {
-    width: 28px;
-    height: 4px;
-    margin: 4px 0;
-    }
-   
+.head {
+  background-color: #2b6cb0;
+  color: white;
+  padding: 20px 0;
+  font-size: 24px;
+  border-radius: 0%;
 }
 
     
-    .container {
+.container {
         text-align: center;
         margin: 0 auto;
         padding: 20px;
         max-width: 1200px;
         
-    }
+}
 
     .title {
         font-family: 'Arial', sans-serif; /* You can use any font of your choice */
