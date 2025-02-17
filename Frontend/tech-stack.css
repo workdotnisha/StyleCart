@@ -6,7 +6,7 @@ body {
   text-align: center;
 }
 
-header {
+.head {
   background-color: #2b6cb0;
   color: white;
   padding: 20px 0;
@@ -55,16 +55,7 @@ header {
   color: #2b6cb0;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+
 
 /* Back Button */
 .back-button {
