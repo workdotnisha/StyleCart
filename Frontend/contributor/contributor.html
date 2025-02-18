@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="contributor.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../toggle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
 
     </style>
@@ -43,11 +44,11 @@
       </header>
   
 <div class="head">
-    <h1 class="title">Contributors of Samnwadh</h1>
+    <h1 data-aos="fade-up" class="title">Contributors of Samnwadh</h1>
 </div> 
    
  <!-- Contributors Section -->
- <div class="container">
+ <div data-aos="fade-up" class="container">
 
     <div id="contributors" class="contributors-grid">
     </div>
@@ -194,6 +195,10 @@
             translateElement.style.display = 'none';
         }
         }
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script>
+       AOS.init({duration: 600, once: false });
    </script>
 
 </body>

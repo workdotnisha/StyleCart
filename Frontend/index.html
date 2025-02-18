@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   </head>
   <body class="bg-gray-100 text-gray-900">
     <header class="bg-blue-600 text-white p-6">
@@ -33,13 +34,12 @@
       <i class="fas fa-arrow-up"></i>
     </button>
 
-    <section id="hero" class="bg-blue-600 text-white text-center py-24">
-      <h2 class="text-3xl font-bold mb-4">Welcome to Samnwadh!</h2>
-      <p class="text-lg mb-6">
+    <section  id="hero" class="bg-blue-600 text-white text-center py-24">
+      <h2 data-aos="fade-up" class="text-3xl font-bold mb-4">Welcome to Samnwadh!</h2>
+      <p data-aos="fade-up" class="text-lg mb-6">
         An open-source platform to connect, share, and collaborate in real-time.
       </p>
-      <a
-        href="#contribute"
+      <a href="#contribute"
         onclick="window.location.href = 'signup.html'"
         class="bg-yellow-500 text-black py-2 px-6 rounded-lg hover:bg-yellow-400 hover:text-white transition-colors duration-300"
       >
@@ -47,21 +47,21 @@
       </a>
     </section>
 
-    <section id="features" class="py-16 bg-white">
-      <div class="container text-center">
-        <h3 class="text-2xl font-bold mb-8">Features</h3>
-        <div class="grid">
+    <section data-aos="fade-up" id="features" class="py-16 bg-white">
+      <div data-aos="fade-up" class="container text-center">
+        <h3 data-aos="fade-up" class="text-2xl font-bold mb-8">Features</h3>
+        <div data-aos="fade-up" class="grid">
           <div class="feature-item">
-            <h4>Real-time Messaging</h4>
-            <p>Chat instantly with friends and colleagues in real-time.</p>
+            <h4 data-aos="fade-up">Real-time Messaging</h4>
+            <p data-aos="fade-up">Chat instantly with friends and colleagues in real-time.</p>
           </div>
           <div class="feature-item">
-            <h4>Group Chats</h4>
-            <p>Create communities and have group discussions.</p>
+            <h4 data-aos="fade-up">Group Chats</h4>
+            <p data-aos="fade-up">Create communities and have group discussions.</p>
           </div>
           <div class="feature-item">
-            <h4>End-to-End Encryption</h4>
-            <p>Ensure privacy with end-to-end encryption for all chats.</p>
+            <h4 data-aos="fade-up">End-to-End Encryption</h4>
+            <p data-aos="fade-up">Ensure privacy with end-to-end encryption for all chats.</p>
           </div>
         </div>
       </div>
@@ -103,5 +103,9 @@
 
     <script src="script.js"></script>
     <script src="toggle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({duration: 600, once: false });
+    </script>
   </body>
 </html>
