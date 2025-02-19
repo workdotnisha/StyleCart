@@ -36,8 +36,11 @@ body {
 }
 
 .tech-card img {
-  width: 80px;
+  width: 100px;
   height: 80px;
+  object-fit: contain;
+  
+ 
 }
 
 .tech-card h2 {
