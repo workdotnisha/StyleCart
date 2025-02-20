@@ -119,6 +119,10 @@ a {
   text-decoration: inherit;
 }
 
+footer div ul li a:hover{
+  color: yellow;
+}
+
 /*
 Add the correct font weight in Edge and Safari.
 */
